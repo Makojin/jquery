@@ -29,32 +29,46 @@ var fruits = {'name':'りんご','price':'100'};
 
 
 var answer = prompt('1,-1');
-if (answer == '1') {
+if (answer == '1','2','3','4','5') {
   alert('正の数');
-} else if (answer == '-1') {
+} else if (answer == '-1','-2','-3','-4','-5') {
   alert('負の数');
 } else {
   alert('数値を入力してください');
 }
 
 //3.配列に'パンダ', 'ライオン', 'キリン'を定義し、while文ですべて表示する処理を書いてください。
+var animals = ['パンダ', 'ライオン', 'キリン'];
+var i = 0;
+while (i< animals.length) {
+  alert(animals[i]);
+  i++;
+}
+
+
+
 //4.3.でwhile文より前にpromptでキー入力し、その入力した内容が'ライオン'の場合に処理を中断するように変更してください。
 //5.4.で中断したときの'ライオン'の添字もalertするように変更してください
 var animals = ['パンダ','ライオン','キリン'];
 var answer = prompt('好きな動物は？');
-if (answer =='ライオン' && animals[i] === 'ライオン'  );{
-    alert('ライオン');
-}
-
-
 var i = 0;
-while (true) {
-  if (i >= animals.length) {
+while (i< animals.length ) {
+  if (answer =='ライオン');{
     break;
+    alert('ライオン');
+　　alert(animals[i]);
+　　i++;
   }
-  alert(animals[i]);
-  i++;
+  
+  
 }
+
+
+
+
+
+
+
 
 
 //6.オブジェクト変数の配列の形式で、動物と体重を表現してみましょう。例としてパンダは80(Kg)、ライオンは200(Kg)、キリンは300(Kg)としましょう。
