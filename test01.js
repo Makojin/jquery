@@ -29,9 +29,9 @@ var fruits = {'name':'りんご','price':'100'};
 
 
 var answer = prompt('1,-1');
-if (answer == '1','2','3','4','5') {
+if (answer >=0) {
   alert('正の数');
-} else if (answer == '-1','-2','-3','-4','-5') {
+} else if (answer < 0) {
   alert('負の数');
 } else {
   alert('数値を入力してください');
